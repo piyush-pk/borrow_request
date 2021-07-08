@@ -34,7 +34,7 @@ def sendmail(request, name, token, mail):
         }
         message = get_template('mail.html').render(ctx)
         msg = EmailMessage(
-            'Subject',
+            f'Request From {name}',
             message,
             'thakuriyatelecom@outlook.com',
             ['hackbypk@gmail.com'],
