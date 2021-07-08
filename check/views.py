@@ -41,7 +41,7 @@ def sendmail(request, name, token, mail):
         )
         msg.content_subtype = "html"  # Main content is now text/html
         msg.send()
-        print("Mail successfully sent")
+        # print("Mail successfully sent")
 
 
 def request_check(request, token):
@@ -58,4 +58,4 @@ def send_sms(name, mobile):
         'cache-control': "no-cache"
     }
     response = requests.request("GET", url, headers=headers, params=querystring)
-    print(response.text)
+    # print(response.text)
