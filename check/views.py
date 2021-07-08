@@ -37,7 +37,7 @@ def sendmail(request, name, token, mail):
             f'Request From {name}',
             message,
             'thakuriyatelecom@outlook.com',
-            ['hackbypk@gmail.com'],
+            ['anandpk22@gmail.com'],
         )
         msg.content_subtype = "html"  # Main content is now text/html
         msg.send()
